@@ -6,4 +6,12 @@ This set of python scripts walks down an organized tree of DICOM data and constr
 
 # Getting Started
 
+## Make a directory containing a tree of DICOM files
+
+## Run the program
+
+```
+run a program like this
+```
+
 # Sample Outputs
