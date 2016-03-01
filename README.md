@@ -28,10 +28,16 @@ sudo port install pydicom
 Check out the repository with
 
 ```
-git clone https://
+git clone https://github.com/FNNDSC/dmd2b.git
+```
+
+### Now Run!
 
 ```
-run a program like this
+cd /some/path/to/DICOM/
+DicomInfoExtract.py
 ```
 
 # Sample Outputs
+
+Once run, you will see the following output files:
