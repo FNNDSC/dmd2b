@@ -23,7 +23,6 @@ sys.path.append(pydicomdir)
 
 from pydicom import dicomio
 
-from pydicom.tag import Tag
 
 def retrieveDicomFiles():
         """retireves all DICOM files stored in folders.
@@ -165,6 +164,65 @@ def extractSeriesDetails(inputImageFile):
 
 
 
+def extractAddtionalHeaderInfo():
+    lstFilesDCM = []
+    headerInfoList =[]
+    for dirname, dirnames, filenames in os.walk('.', topdown=True, followlinks=True):
+
+        for filename in filenames:
+
+            if "0.info" in filename.lower():
+
+                lstFilesDCM.append(os.path.join(dirname,filename))
+
+    tracker = set()
+
+    for i, dfile in enumerate(lstFilesDCM):
+
+        x = open(dfile,'r').readlines()
+        inforDict ={}
+
+        y =x[3:]
+
+        for xx in y:
+            if "PatientID" in xx:
+                inforDict["PatientID"]=''.join(xx[12:])
+
+
+            if "Primary Slice Direction" in xx:
+                # print(xx[24:])
+                inforDict["PrimarySliceDirection"]=''.join(xx[24:])
+
+            if "ProtocolName" in xx:
+
+                inforDict["ProtocolName"]=''.join(xx[14:])
+                # print(xx)
+
+            if "voxel sizes" in xx:
+
+                inforDict["VoxelSizes"]=''.join(xx[15:])
+                #  print(xx)
+
+            if "fov" in xx:
+                inforDict["fov"]=''.join(xx[15:])
+
+            if "dimensions" in xx:
+
+                inforDict["dimensions"]=''.join(xx[15:])
+
+            if "SeriesInstanceUID" in xx:
+                #  print(xx[19:])
+
+                inforDict["SeriesID"]=''.join(xx[19:])
+
+
+                #   print(d)
+        headerInfoList.append(inforDict)
+
+
+    return headerInfoList
+
+
 
 def saveToFile(inputFile, outputFileName):
         """Writes to a csv file.
@@ -186,19 +244,12 @@ def saveToFile(inputFile, outputFileName):
                      
 
 if __name__ == "__main__":
-   #  x = "C:\Boston Children Hospital\DicomInfoExtraction\image\sample1\MR000001.dcm"
-   #print(retrieveDicomFiles())
-   #  extractPatientDetails(retrieveDicomFiles())
-    #extractSeriesInfo(retrieveDicomFiles())
-    #queryDicom(retrieveDicomFiles(), 12, 30, ["MR","CT"])
-    # print (list(retrieveDicomFiles()))
-    # patientInfo = extractPatientDetails(retrieveDicomFiles())
-     #print(extractPatientDetails(retrieveDicomFiles()))
-   # saveToFile(queryDicom(retrieveDicomFiles(),20, 30, ["MR","CT"]), "TestingQueryOutputFile")
-   # showPatientDetails(retrieveDicomFiles())
-   #saveToFile(extractPatientDetails(retrieveDicomFiles()),'TestingOutputFile_Patient')
-   # saveToFile(extractStudyDetails(retrieveDicomFiles()),'TestingOutputFile_Study')
+
+    saveToFile(extractPatientDetails(retrieveDicomFiles()),'TestingOutputFile_PatientDetails')
+    saveToFile(extractStudyDetails(retrieveDicomFiles()),'TestingOutputFile_Study')
     saveToFile(extractSeriesDetails(retrieveDicomFiles()),'TestingOutputFile_Series')
+    saveToFile(extractAddtionalHeaderInfo(),'TestingOutputFile_AdditionalInfo')
+
 
 
 
