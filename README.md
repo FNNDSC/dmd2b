@@ -10,6 +10,26 @@ This set of python scripts walks down an organized tree of DICOM data and constr
 
 ## Run the program
 
+### Satisfy dependencies
+
+Several dependencies are required. First, make sure to install <tt>pydicom</tt>:
+
+#### Ubuntu
+```
+sudo apt-get intall pydicom
+```
+
+#### Mac
+```
+sudo port install pydicom
+```
+### Check out the repo
+
+Check out the repository with
+
+```
+git clone https://
+
 ```
 run a program like this
 ```
