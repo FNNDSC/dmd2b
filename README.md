@@ -60,7 +60,7 @@ os.chdir(/the/path/to/DICOM/)
 outputDir = (/the/path/to/output")
 
 ```
-From the terminal type the following:
+From the terminal:
 ```
 start python3 Interpreter
 
