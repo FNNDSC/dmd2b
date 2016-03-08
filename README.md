@@ -4,18 +4,18 @@ DICOM Meta Data DataBase
 # Abstract
 This set of python scripts walks down an organized tree of DICOM data and constructs various CSV table files, as well as laying the groundwork for building a database.
 
-##Prerequisite  
+#### Prerequisite   
 Python 3+ needs to be installed 
 
-## Getting Started
+#### Getting Started
 
-### Make a directory containing a tree of DICOM files
+#### Make a directory containing a tree of DICOM files
 
-### Make a directory for program files 
+#### Make a directory for program files 
 
-### Make a directory of output files
+#### Make a directory of output files
 
-### Satisfy dependencies
+#### Satisfy dependencies
 
 Dependencies required:
 ```
@@ -41,7 +41,7 @@ sudo apt-get install python3-dateutil
 ```
 sudo port install pydicom
 ```
-### Check out the repo
+#### Check out the repo
 
 Check out the repository with
 
@@ -49,7 +49,7 @@ Check out the repository with
 git clone https://github.com/FNNDSC/dmd2b.git
 ```
 
-## To run
+#### To run
 
 Edit the following lines in DicomInfoExtract.py  to point to DICOM and output directories
 
@@ -69,7 +69,7 @@ import DicomInfoExtract.py
 # Output options
 Once run, there are two options available:
 
-### To display 
+#### To display 
 Patient details - details of patients or subjects scanned
 ```
 print (extractPatientDetails(retrieveDicomFiles()))
@@ -88,7 +88,7 @@ Addtional information - e.g Primary slice direction, Protocol name
 print(extractAddtionalHeaderInfo())
 ```
 
-### To save files as CSV
+#### To save files as CSV
 Patient details - details of patients or subjects scanned
 ```
 saveToFile(extractPatientDetails(retrieveDicomFiles()),'filename')
