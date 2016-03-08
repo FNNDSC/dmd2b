@@ -50,7 +50,7 @@ Check out the repository with
 git clone https://github.com/FNNDSC/dmd2b.git
 ```
 
-#### To run
+# To run
 
 Edit the following lines in DicomInfoExtract.py  to point to DICOM and output directories
 
