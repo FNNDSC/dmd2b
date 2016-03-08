@@ -4,20 +4,21 @@ DICOM Meta Data DataBase
 # Abstract
 This set of python scripts walks down an organized tree of DICOM data and constructs various CSV table files, as well as laying the groundwork for building a database.
 
-#### Prerequisite   
+# Prerequisite   
 Python 3+ needs to be installed 
 
-#### Getting Started
+# Getting Started
+```
+Make a directory containing a tree of DICOM files
 
-#### Make a directory containing a tree of DICOM files
+Make a directory for program files 
 
-#### Make a directory for program files 
+Make a directory of output files
+```
 
-#### Make a directory of output files
+# Satisfy dependencies
 
-#### Satisfy dependencies
-
-Dependencies required:
+#### Dependencies required:
 ```
 1. Download pydicom from  http://www.pydicom.org/
 
