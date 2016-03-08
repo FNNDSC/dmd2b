@@ -62,7 +62,7 @@ outputDir = (/the/path/to/output")
 ```
 From the terminal type the following:
 ```
-start python3 interprator 
+start python3 Interpreter
 
 >> import DicomInfoExtract.py
 ```
