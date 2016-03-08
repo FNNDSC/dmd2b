@@ -94,11 +94,7 @@ Patient details - details of patients or subjects scanned
 saveToFile(extractPatientDetails(retrieveDicomFiles()),'filename')
 
 ```
-Study details - list of studies 
 
-```
-print(extractStudyDetails(retrieveDicomFiles()))
-```
 Study details - list of studies 
 ```
 saveToFile(extractStudyDetails(retrieveDicomFiles()),'filename')
