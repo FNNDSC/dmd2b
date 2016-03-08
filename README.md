@@ -24,13 +24,13 @@ Make a directory of output files
 
 2. Download dateutil package from https://pypi.python.org/pypi/python-dateutil/
 ```
-#### Installing from source code
+Installing from source code
 There are several ways to install pydicom and dateutil as subsequently described  but the easiest option is:
 ```
-Unzip downloaded package zipped  files into the directory where  'DicomInfoExtract.py' program is located
+Unzip downloaded package zipped  files into the programs directory
 ```
 
-#### Ubuntu
+Ubuntu
 ```
 sudo apt-get install pydicom
 
@@ -38,13 +38,13 @@ sudo apt-get install python3-dateutil
 
 ```
 
-#### Mac
+Mac
 ```
 sudo port install pydicom
+sudo port install python3-dateutil
 ```
-#### Check out the repo
 
-Check out the repository with
+#### Check out the repo
 
 ```
 git clone https://github.com/FNNDSC/dmd2b.git
@@ -62,9 +62,9 @@ outputDir = (/the/path/to/output")
 ```
 From the terminal type the following:
 ```
-python3
+start python3 interprator 
 
-import DicomInfoExtract.py
+>> import DicomInfoExtract.py
 ```
 
 # Output options
