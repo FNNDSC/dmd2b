@@ -12,11 +12,18 @@ This set of python scripts walks down an organized tree of DICOM data and constr
 
 ### Satisfy dependencies
 
-Several dependencies are required. First, make sure to install <tt>pydicom</tt>:
+Dependencies required:
+1. Download pydicom from  http://www.pydicom.org/
+2. Download dateutil package from https://pypi.python.org/pypi/python-dateutil/
+
+#### installing from source code
+```
+Download file 
+```
 
 #### Ubuntu
 ```
-sudo apt-get intall pydicom
+sudo apt-get install pydicom
 ```
 
 #### Mac
