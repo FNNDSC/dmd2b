@@ -57,7 +57,7 @@ Edit the following lines in DicomInfoExtract.py  to point to DICOM and output di
 ```
 os.chdir(/the/path/to/DICOM/)
 
-outputDir = (/the/path/to/output files")
+outputDir = (/the/path/to/output")
 
 ```
 From the terminal type the following:
