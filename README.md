@@ -13,9 +13,11 @@ This set of python scripts walks down an organized tree of DICOM data and constr
 ### Satisfy dependencies
 
 Dependencies required:
+```
 1. Download pydicom from  http://www.pydicom.org/
-2. Download dateutil package from https://pypi.python.org/pypi/python-dateutil/
 
+2. Download dateutil package from https://pypi.python.org/pypi/python-dateutil/
+```
 #### installing from source code
 ```
 Download file 
