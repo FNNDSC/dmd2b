@@ -4,7 +4,7 @@ DICOM Meta Data DataBase
 This set of python scripts walks down an organized tree of DICOM data and constructs various CSV table files, as well as laying the groundwork for building a database.
 
 # Acknowledgment
-This work is a collaboration between the University of Edinburgh Imaging, Scotland (http://www.ed.ac.uk/clinical-sciences/edinburgh-imaging) and the Fetal-Neonatal Neuroimaging Developmental Science Centre, Boston Children’s Hospital (http://www.childrenshospital.org/research-and-innovation/research/centers/fetal-neonatal-neuroimaging-and-developmental-science-center). It was funded by a SINAPSE (http://www.sinapse.ac.uk/) Postdoctoral and Early Career Exchange grant awarded to Samuel Danso who is a staff of the University of Edinburgh to visit Boston which resulted in this work. 
+This work is a collaboration between the University of Edinburgh Imaging, Scotland (http://www.ed.ac.uk/clinical-sciences/edinburgh-imaging) and the Fetal-Neonatal Neuroimaging Developmental Science Centre, Boston Children’s Hospital (http://www.childrenshospital.org/research-and-innovation/research/centers/fetal-neonatal-neuroimaging-and-developmental-science-center). The work was funded by a SINAPSE (http://www.sinapse.ac.uk/) Postdoctoral and Early Career Exchange grant awarded to Samuel Danso who is a staff of the University of Edinburgh and a member of the BRAINS Project (http://www.brainsimagebank.ac.uk) team to visit Boston which resulted in this work. 
 
 
 
